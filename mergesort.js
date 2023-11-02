@@ -33,6 +33,5 @@ const merge = (left, right) => {
     return result
 }
 
-let arr = [1, 9, 53, 3, 8, 4, 8, 2, 5, 2, 23, 12, 1, 9, 7]
-arr = mergesort(arr)
+let arr = mergesort([1, 9, 53, 3, 8, 4, 8, 2, 5, 2, 23, 12, 1, 9, 7])
 console.log(arr)
