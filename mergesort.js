@@ -29,9 +29,8 @@ const merge = (left, right) => {
     while (right.length > 0) {
         result.push(right.shift())
     }
-    console.log(left, right, result)
     return result
 }
 
-let arr = mergesort([1, 9, 53, 3, 8, 4, 8, 2, 5, 2, 23, 12, 1, 9, 7])
+let arr = mergesort([1, 9, 53, 3, 8, 4, 8, 2, 5, 2, 23, 12, 1, 9, 2, 32, 3, 12, 7])
 console.log(arr)
