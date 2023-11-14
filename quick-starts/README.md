@@ -8,3 +8,7 @@ The main purpose is to document and build my most frequently used apps/infrastru
 #### How?
 To begin with, I will add sub-folders for particular container types, with rudimentary features.  
 From there the creating of a simple scripting tool to pull them together and deploy to a new repo will be undertaken.  
+
+## Projects
+
+### Basic Node App, with Redis DB 
