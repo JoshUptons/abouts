@@ -4,4 +4,4 @@ read -p "Container Name? " container_name
 
 docker build -t postgres-temp .
 
-docker run -d -e POSTGRES_PASSWORD=password --name $container_name postgres-temp
+docker run --rm -d -p 5432:5432 --name $container_name postgres-temp

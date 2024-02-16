@@ -1,14 +1,12 @@
 CREATE TABLE users (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
-    email VARCHAR(126) NOT NULL,
-    phone_number VARCHAR(15)
+    name VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE posts (
+CREATE TABLE todos (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    title VARCHAR(126) NOT NULL,
-    content VARCHAR(2048) NOT NULL,
-    author_id INT NOT NULL,
-    CONSTRAINT fk_author_id FOREIGN KEY(author_id) REFERENCES users(id) ON DELETE CASCADE
-);
+    title VARCHAR(50),
+    description VARCHAR(1024),
+    due_date TIMESTAMP,
+    done BOOLEAN
+)
