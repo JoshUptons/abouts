@@ -24,9 +24,15 @@ def bs(list: List[int], high: int, low: int, target: int) -> int:
 
 
 def searchInsert(nums: List[int], target: int) -> int:
+    if len(nums) == 0:
+        return 0
+
+    if len(nums) == 1:
+        return (1, 0)[nums[0] > target]
+
     return bs(nums, len(nums), 0, target)
 
 
-l = [1, 2, 4, 9, 12, 24]
-result = searchInsert(l, 0)
-print(result)
+l = [1, 3]
+target = 1
+print(searchInsert(l, target))

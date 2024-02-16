@@ -4,11 +4,12 @@ Problem, given an array of heights, length n
 Find the largest area between heights that will hold water.
 The area will be found as length x width which in this case
 will be (x2 - x1) * (min(y1, y2))
-4    #
-3    #           # 
-2#   #   #   #   #
-1#   #   #   #   #   #
-00   1   2   3   4   5
+
+4|     #
+3| #   #           # 
+2| #   #       #   #
+1|_#___#___#___#___#____
+0  0   1   2   3   4   5
     area will be between
 """
 
